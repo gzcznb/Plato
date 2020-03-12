@@ -1,12 +1,11 @@
-const base = document.getElementById("base").href;
-// 与后台交互
-
-console.log("base: " + base);
+let base = document.getElementById("base").href;
+let split = base.split("/");
+const cxt = split[0] + "//" + split[2];
 
 
 function ck() {
     $.ajax({
-        url: base + '/' + 'freemarker/info',
+        url: cxt + '/' + 'freemarker/info',
         contentType: "application/x-www-form-urlencoded; charset=utf-8",
         dataType: 'json',
         type: 'post',

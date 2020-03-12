@@ -1,4 +1,4 @@
-<#assign base=springMacroRequestContext.getContextUrl("")/>
+<#assign base=springMacroRequestContext.getContextPath()/>
 <#include "../public/public.ftl" />
 <!DOCTYPE>
     <html lang="en">
